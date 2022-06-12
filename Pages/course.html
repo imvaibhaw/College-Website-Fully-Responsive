@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HGPI</title>
+    <link rel="Stylesheet" href="../Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <section class="course-header">
+        <nav>
+            <a href="#"><img src="../Pic/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../Pages/about.html">ABOUT</a></li>
+                    <li><a href="../Pages/course.html">COURSE</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="../Pages/course.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!---------------- About Us ------------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1 class="course-head">Courses Provided By HGPI</h1>
+                <div class="course-section">
+                </br>
+                
+                <h3>B.TECH</h3>
+                <li>B.TECH IN COMPUTER SCIENCE ENGINEERING</li>
+                <li>B.TECH IN MECHANICAL ENGINEERING</li>
+                <li>B.TECH IN ELECTRICAL ENGINEERING</li>
+                <li>B.TECH IN ELECTRONICS ENGINEERING</li>
+                <li>B.TECH IN CIVIL ENGINEERING</li><br>
+
+                <h3>PHARMACY</h3>
+                <li>B PHARMACY</li>
+                <li>D PHARMACY</li>
+                <li>M PHARMACY</li><br>
+                <h3>NURSING</h3>
+                <li>BSC NURSING</li><br>
+                <h3>MANAGEMENT</h3>
+                <li>MBA</li>
+                <li>BBA</li>
+                <br>
+                
+                <h3>BCA</h3><br>
+                
+                <h3>LAW</h3></br>
+
+                </div>
+    </section>
+
+    <!--------- Footer Section ---------->
+
+    <section class="footer">
+        <!-- <h4>Contact Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sint beatae quas cumque voluptatem quo quaerat libero quod, molestias tempore earum unde quasi harum repellat!</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i> -->
+    </section>
+
+
+    <!------------ Javascript ---------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

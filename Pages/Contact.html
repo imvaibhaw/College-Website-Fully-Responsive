@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HGPI</title>
+    <link rel="Stylesheet" href="../Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <section class="contact-header">
+        <nav>
+            <a href="#"><img src="../Pic/logo1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../Pages/about.html">ABOUT</a></li>
+                    <li><a href="../Pages/course.html">COURSE</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="../Pages/Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!---------------- About Us ------------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Contact Us Now !</h1>
+                <div class="container">
+                    <form onsubmit="sendEmail(); rest(); return false;">
+                  
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  
+                      <label for="mnumber">Mobile Number</label>
+                      <input type="text" id="mnumber" name="mobilnumber" placeholder="Your number..">
+
+                      <label for="Email">Email</label>
+                      <input type="email" id="Email" name="Email Address" placeholder="Your email....">
+                   
+
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="australia">Australia</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="bhutan">Bhutan</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="other">Other</option>
+                      </select>
+                  
+                      <label for="course">Course</label>
+                      <select id="course" name="course">
+                        <option value="btech">B.Tech</option>
+                        <option value="pharmacy">Pharmacy</option>
+                        <option value="law">Law</option>
+                        <option value="mba">MBA</option>
+                        <option value="bba">BBA</option>
+                        <option value="bca">BCA</option>
+                        <option value="nursing">Nursing</option>
+                      </select>
+
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Submit">
+                  
+                    </form>
+                  </div>
+
+                  
+
+            </div>
+    </section>
+
+    <!--------- Footer Section ---------->
+
+    <section class="footer">
+        <!-- <h4>Contact Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sint beatae quas cumque voluptatem quo quaerat libero quod, molestias tempore earum unde quasi harum repellat!</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div> -->
+        <p>Made with <i class="fa-solid fa-heart"></i> by Vaibhaw</p>
+    </section>
+
+
+    <!------------ Javascript ---------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+          Email.send({
+              Host: "smtp.gmail.com",
+              Username : "sonucyber841421@gmail.com",
+              Password : "9801735003@Sp" ,
+              To : 'sonucyber841421@gmail.com',
+              Subject : document.getElementById("email").value,
+              Body: "and this is the body",
+          }).then(
+              message => alert(message)
+          );
+      }
+    </script>
+</body>
+
+</html>
